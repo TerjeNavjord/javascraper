@@ -7,7 +7,6 @@ Create a new Spring Boot project with the necessary dependencies.
 Configure the database connection in the application.properties file with the appropriate database credentials and JDBC URL.
 
 Add the following dependencies to your pom.xml file for Maven or build.gradle file for Gradle:
-
 <!-- Jsoup for web scraping -->
 <dependency>
     <groupId>org.jsoup</groupId>
@@ -17,6 +16,7 @@ Add the following dependencies to your pom.xml file for Maven or build.gradle fi
 
 <!-- JDBC driver for your specific database -->
 <!-- Add the appropriate dependency for your database -->
+
 Create the ScraperService class that handles the scraping logic:
 Inject the necessary dependencies, including the JdbcTemplate for database operations.
 
