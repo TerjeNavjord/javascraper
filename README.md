@@ -19,8 +19,8 @@ Add the following dependencies to your pom.xml file for Maven or build.gradle fi
 Create the ScraperService class that handles the scraping logic:
 Inject the necessary dependencies, including the JdbcTemplate for database operations.
 
-@Service
-public class ScraperService {
+    @Service
+    public class ScraperService {
     private final JdbcTemplate jdbcTemplate;
 
     @Autowired
@@ -53,9 +53,9 @@ public class ScraperService {
 
 Create the ScraperController class:
 
-@RestController
-@RequestMapping("/scraper")
-public class ScraperController {
+    @RestController
+    @RequestMapping("/scraper")
+    public class ScraperController {
     private final ScraperService scraperService;
 
     @Autowired
