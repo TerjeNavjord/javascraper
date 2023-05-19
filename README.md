@@ -49,7 +49,7 @@ Inject the necessary dependencies, including the JdbcTemplate for database opera
         String sql = "INSERT INTO your_table_name (column_name) VALUES (?)"; // Replace with your table and column names
         jdbcTemplate.update(sql, data);
     }
-}
+    }
 
 Create the ScraperController class:
 
@@ -72,6 +72,6 @@ Create the ScraperController class:
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error occurred during scraping.");
         }
     }
-}
+    }
 
 Send a POST request to http://localhost:8080/scraper/scrape using a tool like Postman or curl to trigger the scraping process.
